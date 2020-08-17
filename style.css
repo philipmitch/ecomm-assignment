@@ -1,0 +1,184 @@
+body {
+    background-color: black;
+    font-family: roboto, sans-serif;
+    padding-top: 3em;
+    }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .topbar {
+    box-sizing: border-box;
+    background-color: red;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 0 1em;
+    line-height: 1;
+    display: flex;
+    justify-content: space-between;
+    }
+  
+  .logo {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+  }
+  
+  .mainmenu {
+    font-size: 1em;
+    list-style: none;
+    display: flex;
+    padding-top: 1em;   
+  }
+  
+  .mainmenu li {
+    margin-left: 1em;
+
+  }
+  
+  .mainmenu a {
+    color: white;
+
+  }
+  
+  .sidebar {
+    position: fixed;
+    width: 8em;
+    height: 100%;
+    background-color: black;
+    padding-left: em;
+  }
+  
+  .sidebar header {
+    font-size: 1em;
+    font-weight: 430;
+    color: white;
+    line-height: 3em;
+    background: black;
+    padding-left: 1em;
+  }
+  
+  .sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 2em;
+    font-size: 1em;
+    color: white;
+    padding-left: 1em;
+    box-sizing: border-box;
+    border-top: .01em solid white;
+    border-bottom: .08em solid steelblue;
+    transition: .4s;
+
+    }
+  
+  ul li:hover a {
+    padding-left: 1.5em;
+
+    }
+    
+  h3{
+    color: dimgray;
+    font-weight: 600;
+    }
+  
+  .products {
+    background-color: white;
+    font-family: roboto, sans-serif;
+    color: dimgray;
+    margin-left: 8em;
+    padding:  1em;
+    height: auto;
+    width: auto;
+      
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; 
+    grid-gap: 2em;
+
+    }
+
+    .instrument {
+    border-color: tomato;
+    border: 2px;
+    border-radius: 5px;
+    }
+
+    dl {
+        font-size: 0.8rem;
+        color: gold;
+        }
+    dt{
+                color: steelblue;
+
+        }
+
+.submit{
+    background-color: orangered;
+    color: white;
+    border: none;
+    Padding: 0.5em;
+}
+    button {
+    background-color: steelblue;
+    color: white;
+    border: none;
+    Padding: 0.5em;
+}
+
+p{
+      color: forestgreen;
+      font-size: 0.7em;
+      font-weight: 100;
+  }
+  
+  li span {
+    background: rgb(178, 182, 187);
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.25em;
+      }
+
+  footer{
+      background-color: white;
+      color: deeppink;     
+      margin-left: 8em;
+  } 
+  
+  .footer-bottom {
+    background-color: dimgray;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  
+  .item {
+    color: white;
+    width: auto; 
+    padding: 1em;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 40em) {
+.products{
+    
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+}
+
+@media screen and (min-width: 80em) {
+.products{       
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    }
+}
